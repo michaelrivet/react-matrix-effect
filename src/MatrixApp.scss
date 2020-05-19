@@ -1,0 +1,14 @@
+#root {
+    background-color: black;
+    height: 100vh;
+  }
+  
+  .code {
+    color: greenyellow;    
+  
+    &-character {
+      &:last-child {
+        color: white;
+      }
+    }
+  }
