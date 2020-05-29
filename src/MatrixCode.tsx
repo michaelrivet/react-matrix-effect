@@ -34,7 +34,7 @@ export const MatrixCode = ({ xPosition, length, speed }: MatrixCodeProps) => {
   const [depth, setDepth] = useState(0);
 
   const increaseDepth = () => {
-    if (depth > windowHeight + 400) {
+    if (depth > windowHeight + 800) {
       setDepth(() => 0);
       return;
     }
