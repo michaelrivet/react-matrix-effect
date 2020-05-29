@@ -29,7 +29,6 @@ export const App = () => {
   };
 
   const createNewCode = () => {
-    if(!autoGenerate) return;
     const matrixLine = createMatrixLine();
 
     setCurrentId((currentId) => currentId + 1);
@@ -45,7 +44,7 @@ export const App = () => {
     });
   };
   
-  useInterval(() => createNewCode(), 80);
+  useInterval(() => { if(!autoGenerate) return; createNewCode() }, 80);
 
   return (
     <>
